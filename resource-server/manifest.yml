@@ -1,10 +1,10 @@
 ---
 applications:
- - name: resource-server-sample
+ - name: resource-server-dlb
    memory: 1G
    instances: 1
    buildpack: java_buildpack
    path: build/libs/resource-server.jar
    env:
      SKIP_SSL_VALIDATION: "true"
-     AUTH_SERVER: https://<plan-auth-domain>.login.<your-domain>.com
+     AUTH_SERVER: https://canada.login.run.pivotal.io
